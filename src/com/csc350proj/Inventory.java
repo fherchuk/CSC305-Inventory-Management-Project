@@ -1,6 +1,7 @@
 package com.csc350proj;
 
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,20 +9,17 @@ public class Inventory {
     //Inventory Class using HashMap
     // Includes functions for filling and printing...
     public final HashMap<String, Product> inventoryItems = new HashMap<>();
+    public Integer nameIndex, priceIndex, stockIndex = 0;
 
-
-    public void fillInventory() {
+    public void fillInventory(String[] item) throws ParseException {
         //This is a Function to initially fill the database
         //To Be Referenced later in imports from Excel...
         // TO BE FINISHED
 
-        //Placeholder data
-        //Can be changed and altered to test values and new attributes...
-        Product temp = new Product("Apple", 0.75, 3);
-        inventoryItems.put(temp.name, temp);
-        temp = new Product("Banana", 1.25, 4);
-        inventoryItems.put(temp.name, temp);
-        temp = new Product("Coconut", 4.00, 1);
+        Integer quantity = Integer.parseInt(item[this.stockIndex]);
+        item[this.priceIndex] = item[this.priceIndex].substring(1);
+        Double price = DecimalFormat.getNumberInstance().parse(item[this.priceIndex]).doubleValue();
+        Product temp = new Product(item[this.nameIndex], price, quantity);
         inventoryItems.put(temp.name, temp);
     }
 
