@@ -1,6 +1,5 @@
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.HashMap;
 import java.util.List;
 
 public class Mapper {
@@ -28,6 +27,11 @@ public class Mapper {
             stmt.setString(index, i);
             index += 1;
         }
+        stmt.executeUpdate();
+    }
+    public void dropTable(String tableName) throws SQLException {
+        String dropStr = "DROP TABLE "+tableName+";";
+        PreparedStatement stmt = mySQL.connection.prepareStatement(dropStr);
         stmt.executeUpdate();
     }
 

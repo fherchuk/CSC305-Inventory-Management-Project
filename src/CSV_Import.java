@@ -5,10 +5,9 @@ import java.util.Scanner;
 
 public class CSV_Import {
 
-    public static String fileName;
-    public static void readFile(Mapper map,String fname) throws FileNotFoundException, SQLException {
-        fileName = fname;
-        Scanner sc = new Scanner(new File(fileName));
+    public static void readFile(Mapper map,File fname) throws FileNotFoundException, SQLException {
+
+        Scanner sc = new Scanner(fname);
         sc.useDelimiter(",");
         String firstLine = sc.nextLine();
         String vars = sc.nextLine();

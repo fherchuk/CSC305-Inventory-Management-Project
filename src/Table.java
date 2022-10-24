@@ -63,7 +63,7 @@ public class Table {
                 return "int";
             } catch(NumberFormatException e){//not an integer
                 return "double";
-            }
+                }
         } catch(NumberFormatException e) {//not a number
             return "varchar(45)";
         }
