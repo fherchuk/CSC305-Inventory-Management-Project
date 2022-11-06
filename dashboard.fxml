@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1290.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboardController">
+   <children>
+      <VBox focusTraversable="true" prefHeight="630.0" prefWidth="255.0">
+         <children>
+            <HBox style="-fx-border-color: #06C49C;; -fx-border-width: 0px 0px 1px 0px;">
+               <children>
+                  <ImageView fitHeight="120.0" fitWidth="255.0" focusTraversable="true">
+                     <image>
+                        <Image url="@../images/logo_dashboard.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox prefHeight="466.0" prefWidth="255.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <JFXButton layoutX="10.0" layoutY="26.0" maxHeight="1.7976931348623157E308" onAction="#listItems" prefHeight="151.0" prefWidth="255.0" ripplerFill="WHITE" text="List All Items" textAlignment="CENTER" textFill="#06c49c" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btnList" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton maxHeight="1.7976931348623157E308" onAction="#setCompleted" prefHeight="151.0" prefWidth="255.0" ripplerFill="WHITE" text="Mark Items Completed" textAlignment="CENTER" textFill="#06c49c" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="16.0" top="16.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btnCheck" />
+                     </styleClass></JFXButton>
+                  <JFXButton layoutX="10.0" layoutY="248.0" maxHeight="1.7976931348623157E308" onAction="#checkItems" prefHeight="151.0" prefWidth="255.0" ripplerFill="WHITE" text="Check Items in Progress" textAlignment="CENTER" textFill="#06c49c" wrapText="true" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btnProgressItems" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="TOP_RIGHT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="121.0" prefWidth="1035.0" style="-fx-background-color: white; -fx-border-width: 0px 0px 1px 0px; -fx-border-color: #06C49C;">
+               <children>
+                  <JFXButton fx:id="btnQuit" focusTraversable="false" onAction="#quit" prefHeight="89.0" prefWidth="212.0" style="-fx-background-color: #06C49C;" styleClass="btnQuit" text="Quit" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="16.0" top="16.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <VBox fx:id="mainVbox" prefHeight="634.0" prefWidth="1003.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </VBox.margin></VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
