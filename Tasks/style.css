@@ -1,0 +1,72 @@
+.btn {
+	-fx-border-color :  #06C49C;
+	-fx-border-width : 0px 0px 1px 0px;
+}
+
+.btnQuit {
+     -fx-graphic: url("../images/logout.png");
+}
+
+.btnProgressItems {
+	 -fx-background-color : white;
+     -fx-graphic: url("../images/progress.png");
+}
+
+
+.btnProgressItems:focused {
+     -fx-graphic: url("../images/progress-white.png");
+     -fx-background-color : #06C49C;
+     -fx-text-fill : white;
+}
+
+
+.btnEdit {
+     -fx-background-color : white;
+     -fx-graphic: url("../images/edit.png");
+}
+
+.btnEdit:focused {
+     -fx-graphic: url("../images/edit-white.png");
+     -fx-background-color : #06C49C;
+     -fx-text-fill : white;
+}
+
+
+.btnCheck {
+	 -fx-background-color : white;
+     -fx-graphic: url("../images/check.png");
+}
+
+.btnCheck:focused {
+     -fx-graphic: url("../images/check-white.png");
+     -fx-background-color : #06C49C;
+     -fx-text-fill : white;
+}
+
+.btnList {
+	 -fx-background-color : white;
+     -fx-graphic: url("../images/list.png");
+}
+
+.btnList:focused {
+     -fx-graphic: url("../images/list-white.png");
+     -fx-background-color : #06C49C;
+     -fx-text-fill : white;
+}
+
+.btnEditItem {
+	-fx-graphic: url("../images/edit-white.png");
+     -fx-background-color : #06C49C;
+     -fx-text-fill : white;
+}
+
+.btnAddItem {
+	-fx-graphic: url("../images/add-white.png");
+     -fx-background-color : #06C49C;
+     -fx-text-fill : white;
+}
+
+.btnSubmit {
+	 -fx-background-image: url("../images/submit.png");
+	 -fx-background-repeat : no-repeat;
+}
