@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1290.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboardController">
+   <children>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="81.0" prefWidth="1035.0" style="-fx-background-color: white; -fx-border-width: 1px 0px 1px 0px; -fx-border-color: #41A5EE;">
+               <children>
+                  <VBox prefHeight="466.0" prefWidth="255.0">
+                     <children>
+                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="80.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="80.0" style="-fx-background-color: white; -fx-border-color: #41A5EE; -fx-border-width: 0px 1px 1px 0px;" text="Inventory Management System" textAlignment="CENTER" textFill="#41a5ee" wrapText="true">
+                                 <font>
+                                    <Font name="System Italic" size="18.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="69.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/inventory.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="TOP_RIGHT" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="16.0" top="16.0" />
+                     </HBox.margin>
+                     <children>
+                        <JFXButton fx:id="btnQuit" focusTraversable="false" onAction="#quit" prefHeight="52.0" prefWidth="212.0" style="-fx-background-color: #41A5EE;" styleClass="btnQuit" text="Quit" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <VBox fx:id="mainVbox" maxHeight="1.7976931348623157E308" prefWidth="1003.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
