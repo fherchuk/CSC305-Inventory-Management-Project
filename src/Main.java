@@ -8,13 +8,11 @@ public class Main {
         //Main Function
         //Initialize the SQL Connection and Mapper Class
 
-        mySQL SQL = new mySQL();
-        Mapper mapper = new Mapper(SQL);
-        MyFrame frame1 = new MyFrame(mapper);
+        mySQL SQL = new mySQL("inventory"); //Creates SQL Connection
+        Mapper mapper = new Mapper(SQL);//Initializes Mapper
+        MyFrame frame1 = new MyFrame(mapper);//Opens Frame to connect to Java
+        //SetPriorityClass set = new SetPriorityClass(15,5);
         //Importation of CSV File into Database
-        //try{
-        //}catch(Exception e){  System.out.println
-          //      ("Table Already Exists");   }
-        //*NOTE: FILEPATH SHOULD BE CHANGED TO DIRECTORY OF CSV FILE. THIS WILL BE UPDATED LATER TO A FILE EXPLORER.
+        //mapper.returnStock("product",2);
     }
 }

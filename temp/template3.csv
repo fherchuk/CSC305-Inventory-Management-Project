@@ -1,8 +1,8 @@
 Title,Vendor,VariantSKU,VariantInventoryQty,VariantPrice,VariantRequiresShipping,VariantTaxable,Size,Color,Costperitem,ImageSrc
-Clay Plant Pot,Company 123,17234657,5,32.99,TRUE,TRUE,NULL,Grey,15.75,N/A
-Pink Armchair,Company A,27384966,11,250,TRUE,FALSE,NULL,Pink,???,https://i.imgur.com/VBKwNRV.jpeg
+Clay Plant Pot,Company 123,17234657,5,32.99,TRUE,TRUE,NULL,Grey,5.75,N/A
+Pink Armchair,Company A,27384966,11,250,TRUE,FALSE,NULL,Pink,4.30,https://i.imgur.com/VBKwNRV.jpeg
 Vanilla Candle,Company 123,17384976,5,19.99,FALSE,TRUE,OS,Blue,5.25,N/A
 Lava Lamp- Red,Acme,12344,2,22.99,TRUE,TRUE,LG,Red,8.49,https://i.imgur.com/YO2zRcG.mp4
 Multi-Colored Blanket,Company A,22472938,4,15.99,FALSE,FALSE,6' x 6',Multicolored,4.99,N/A
 Box of N95 Masks,Acme,442321,22,3.99,FALSE,TRUE,NULL,NULL,0.5,N/A
-T-Shirt Black,Company 123,11734200,12,9.99,TRUE,FALSE,MED - XXL,Black,???,N/A
+T-Shirt Black,Company 123,11734200,12,9.99,TRUE,FALSE,MED - XXL,Black,5.50,N/A

@@ -1,14 +1,27 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.sql.*;
 
 
 public class mySQL {
     public static Connection connection;
     public static Statement statement;
-    public ResultSet resultSet;
+    public static ResultSet resultSet;
+
+    public mySQL(String fileName) throws RuntimeException {
+
+        String url = "jdbc:sqlite:database/" + fileName;
+        try {
+            connection = DriverManager.getConnection(url);
+            if (connection != null) {
+                statement = connection.createStatement();
+                DatabaseMetaData meta = connection.getMetaData();
+                System.out.println("The driver name is " + meta.getDriverName());
+                System.out.println("A new database has been created.");
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
 
     public mySQL() throws RuntimeException {
         try {
@@ -18,7 +31,4 @@ public class mySQL {
             throw new RuntimeException(ex);
         }
     }
-
 }
-
-;

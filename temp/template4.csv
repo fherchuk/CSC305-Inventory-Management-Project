@@ -1,0 +1,14 @@
+Handle,Title,Body (HTML),Vendor,Product Category,Type,Tags,Published,Option1 Name,Option1 Value,Option2 Name,Option2 Value,Option3 Name,Option3 Value,Variant SKU,Variant Grams,Variant Inventory Tracker,Variant Inventory Qty,Variant Inventory Policy,Variant Fulfillment Service,Variant Price,Variant Compare At Price,Variant Requires Shipping,Variant Taxable,Variant Barcode,Image Src,Image Position,Image Alt Text,Gift Card,SEO Title,SEO Description,Google Shopping / Google Product Category,Google Shopping / Gender,Google Shopping / Age Group,Google Shopping / MPN,Google Shopping / AdWords Grouping,Google Shopping / AdWords Labels,Google Shopping / Condition,Google Shopping / Custom Product,Google Shopping / Custom Label 0,Google Shopping / Custom Label 1,Google Shopping / Custom Label 2,Google Shopping / Custom Label 3,Google Shopping / Custom Label 4,Variant Image,Variant Weight Unit,Variant Tax Code,Cost per item,Price / International,Compare At Price / International,Status
+blue-shirt,Blue Shirt,"",DatabaseTestings1,,T-Shirt,"",true,Color,Black,Size,Small,,,114s,22.6796185,,7,deny,manual,25.99,,true,true,"",,,,false,,,,,,,,,,,,,,,,,lb,,,,,active
+blue-shirt,,,,,,,,,Black,,Large,,,114l,22.6796185,,12,deny,manual,25.99,,true,true,"",,,,,,,,,,,,,,,,,,,,,lb,,,,,
+blue-shirt,,,,,,,,,Black,,XXL,,,114xxl,22.6796185,,2,deny,manual,25.99,,true,true,"",,,,,,,,,,,,,,,,,,,,,lb,,,,,
+blue-shirt,,,,,,,,,Blue,,Small,,,112s,22.6796185,,14,deny,manual,25.99,,true,true,"",,,,,,,,,,,,,,,,,,,,,lb,,,,,
+blue-shirt,,,,,,,,,Blue,,Large,,,112l,22.6796185,,3,deny,manual,25.99,,true,true,"",,,,,,,,,,,,,,,,,,,,,lb,,,,,
+blue-shirt,,,,,,,,,Blue,,XXL,,,112xxl,22.6796185,,6,deny,manual,25.99,,true,true,"",,,,,,,,,,,,,,,,,,,,,lb,,,,,
+blue-shirt,,,,,,,,,White,,Small,,,116s,22.6796185,,32,deny,manual,25.99,,true,true,"",,,,,,,,,,,,,,,,,,,,,lb,,,,,
+blue-shirt,,,,,,,,,White,,Large,,,116l,22.6796185,,11,deny,manual,25.99,,true,true,"",,,,,,,,,,,,,,,,,,,,,lb,,,,,
+blue-shirt,,,,,,,,,White,,XXL,,,116xxl,22.6796185,,11,deny,manual,25.99,,true,true,"",,,,,,,,,,,,,,,,,,,,,lb,,,,,
+camera,Camera,,DatabaseTestings1,,"","",true,Title,Default Title,,,,,'77,0.0,,5,deny,manual,199.99,,true,true,,,,,false,,,,,,,,,,,,,,,,,lb,,,,,active
+red-shirt,Red Shirt,,DatabaseTestings1,,"","",true,Title,Default Title,,,,,'203,0.0,,7,deny,manual,25.99,,true,true,,,,,false,,,,,,,,,,,,,,,,,lb,,,,,active
+phone-case-black,Phone Case Black,,DatabaseTestings1,,"","",true,Title,Default Title,,,,,'151,0.0,,12,deny,manual,9.99,,true,true,,,,,false,,,,,,,,,,,,,,,,,lb,,,,,active
+iphone-10-case-white,iPhone 10 Case White,,DatabaseTestings1,,"","",true,Title,Default Title,,,,,'150,0.0,,0,deny,manual,0.00,,true,true,,,,,false,,,,,,,,,,,,,,,,,lb,,,,,active
