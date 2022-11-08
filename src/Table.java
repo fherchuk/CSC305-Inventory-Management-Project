@@ -1,22 +1,41 @@
+
+import java.util.ArrayList;
 import java.util.List;
+
 
 public class Table {
     public String name;
-    public List<String> headers;
-    public List<String> types;
-    public Integer headerSize;
+    public List<Header> headers;
+    public Header primary_key;
+
 
     public Table(String name, List<String> headers, List<String> types){
         this.name = name;
-        this.headers = headers;
-        this.headerSize = 0;
-        this.types = types;
+        this.headers = new ArrayList<>();
+        for (String i : headers){
+            int index = headers.indexOf(i);
+            this.headers.add(new Header(i, typeReturn(types.get(index))));
+        }
+        for(Header j : this.headers){
+            findIndexes(j);
+        }
     }
-    public String setVariables(){
+    public void findIndexes(Header header){
+        if (header.getName().matches("sku|variantsku|variant_sku|id_number|id|google_shopping_/_mpn")){
+            this.primary_key = header; }
+    }
+
+
+    public void setRow(String ... item){
+        for (Header i: this.headers){
+            i.addRow(item);
+        }
+    }
+    public String insertVariables(){
         StringBuilder statement = new StringBuilder();
         statement.append(" (");
         int h = 0;
-        while (h<headerSize){
+        while (h<headers.size()){
             statement.append("?, ");
             h++;
         }
@@ -24,32 +43,27 @@ public class Table {
         statement.append(");");
         return String.valueOf(statement);
     }
-  public String iterateHeaders(){
-          StringBuilder statement = new StringBuilder();
-          statement.append(" (");
-          for (String i:headers){
-              statement.append(i).append(", ");
-          }
-          statement.delete(statement.length() - 2, statement.length());
-          statement.append(")");
-          return statement.toString();
+  public String insertValues() {
+      StringBuilder statement = new StringBuilder();
+      statement.append(" (");
+      for (Header i : headers) {
+          statement.append(i.getName()).append(", ");
       }
-
-    public String makeTableHeaders(){
+      statement.delete(statement.length() - 2, statement.length());
+      statement.append(")");
+      return statement.toString();
+  }
+    public String createTableStatement(){
         StringBuilder statement = new StringBuilder();
         statement.append(" (");
         int index = 0;
-        for (String i:headers){
-            statement.append(i).append(" ");
-            statement.append(typeReturn(types.get(index)));
+        for (Header i:headers){
+            statement.append(i.getName()).append(" ");
+            statement.append(typeReturn(i.getType()));
             statement.append(", ");
             index++;
-
-            headerSize += 1;
         }
-
-        statement.delete(statement.length() - 2, statement.length());
-        statement.append(");");
+        statement.append("PRIMARY KEY ("+primary_key.getName()+"));");
         return statement.toString();
     }
 
@@ -68,4 +82,5 @@ public class Table {
             return "varchar(45)";
         }
     }
+
 }
